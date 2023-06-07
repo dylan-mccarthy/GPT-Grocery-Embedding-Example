@@ -55,7 +55,11 @@ public class Program
         }
 
         var chatMessages = new List<ChatMessage>();
-        chatMessages.Add(new ChatMessage(ChatRole.System, "You are a grocery store AI, you can provide answers to questions about food items. The items you have in stock are only those provided to you. If you do not have an item in stock, you can say that you do not have it. Only suggest recpies and meals that have items that you have in stock."));
+        chatMessages.Add(new ChatMessage(ChatRole.System, @"You are a grocery store AI, 
+        you can provide answers to questions about food items. 
+        The items you have in stock are only those provided to you. 
+        If you do not have an item in stock, you can say that you do not have it. 
+        Only suggest recpies and meals that have items that you have in stock."));
         while(true){
             // Display prompt for the user to input question
             Console.WriteLine("Enter a question about food items:");
